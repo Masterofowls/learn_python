@@ -2,6 +2,12 @@
 
 Running history of tutoring and repo changes.
 
+## 2026-10-01
+
+- Lesson 20 (`*args` / `**kwargs`) reviewed complete after removing erroneous trailing `()` calls.
+- Lesson 19 (comprehensions) reviewed complete; added missing `print(squares)`.
+- Progress: Stage 2 L14–L20 done; current = L21 OOP (inheritance, `@property`, `__str__`).
+
 ## 2026-09-26
 
 - Created local learning docs: `CURRICULUM.md`, `HOW_TO_LEARN.md`, `PROGRESS.md`, `ARCHITECTURE.md`, `DECISIONS.md`, root `README.md`.
