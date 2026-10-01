@@ -1,40 +1,51 @@
 # How to learn in this repo
 
-Interactive tutoring format used for every lesson.
+Interactive tutoring for **Python** and **JavaScript**. Same loop; separate folders and progress files.
 
-## Loop
+## Loop (both tracks)
 
-1. **Theory** — tutor explains the topic (gradually, in detail).
-2. **Test** — short quiz (answer in chat).
-3. **Task** — you write code in `lessonN.py` (or files named in the lesson).
-4. **Review** — tutor checks quiz + code (correctness and ideas, not only “it runs”).
-5. **Next** — only after the lesson is marked complete.
+1. **Theory** — tutor explains the topic.
+2. **Task** — you write the lesson file.
+3. **Review** — tutor checks code (ideas, not only “it runs”).
+4. **Next** — only after the lesson is complete.
+
+### Temporary rule — skip quizzes
+
+**Quizzes / written tests are OFF for now.**  
+Do not require quiz answers before the task. Resume quizzes only when the learner asks to turn them back on.
+
+## Which track?
+
+| Track | Folder | Run | Progress |
+|-------|--------|-----|----------|
+| Python | `python/` | `python python/lessonN.py` | [docs/python/PROGRESS.md](python/PROGRESS.md) |
+| JavaScript | `js/` | `node js/lessonN.js` | [docs/js/PROGRESS.md](js/PROGRESS.md) |
+
+Say which track you want in chat (e.g. “continue Python” or “start JS Lesson 1”).
 
 ## Your job
 
 - Create/edit the lesson file yourself.
-- Run it locally when useful: `python lessonN.py` (use your chosen pyenv version consistently).
-- Send quiz answers and point at the file (e.g. `@lesson14.py`).
+- Run it locally.
+- `@`-mention the file when ready for review.
 - Fix bugs the tutor flags before moving on.
 
 ## Tutor job
 
-- Teach one lesson at a time.
-- Grade quiz and code against the lesson requirements.
-- Explain mistakes with a short correction (especially Python vs JS differences).
-- Unlock the next lesson only when the current one is done.
-- Follow `docs/CURRICULUM.md` stage locks (Stage 2 → 3 → 4).
+- Teach one **current** lesson per track (see that track’s `PROGRESS.md`).
+- Honor **stage locks** inside that track.
+- **Skip quizzes** until re-enabled.
+- Prefer the learner writing code.
+- Update the track’s `PROGRESS.md` and `docs/ACTIVITY_LOG.md` when a lesson is done.
 
 ## File conventions
 
-| Kind | Pattern |
-|------|---------|
-| Lesson script | `lessonN.py` |
-| Shared helpers | e.g. `helpers.py` when a lesson needs a second module |
-| Generated/local data | e.g. `learner.txt` (gitignored when appropriate) |
-| Docs | `docs/*.md` |
+| Track | Lesson file | Helpers |
+|-------|-------------|---------|
+| Python | `python/lessonN.py` | `python/helpers.py` |
+| JS | `js/lessonN.js` | `js/helpers.js` |
 
-Prefer:
+### Python entry style (from L10+)
 
 ```python
 def main():
@@ -44,25 +55,23 @@ if __name__ == "__main__":
     main()
 ```
 
-for lessons from Stage 1 L10 onward (unless the lesson says otherwise).
+### JS entry style
 
-## Environment tips
+```js
+function main() {
+  // ...
+}
 
-- Stick to **one** Python version per session (example: 3.12.10 via pyenv).
-- Install packages into that same interpreter:
+main();
+```
 
-  ```bash
-  py -3.12 -m pip install requests
-  ```
+## Environment
 
-- After Lesson 22, use a project venv and `requirements.txt`.
+- **Python:** one interpreter for run + pip (pyenv); venv from Python L22.
+- **JS:** Node.js LTS; npm/`package.json` from JS L22.
 
-## Progress tracking
+## Docs map
 
-- Checklist: `docs/PROGRESS.md`
-- Full map: `docs/CURRICULUM.md`
-- What changed when: `docs/ACTIVITY_LOG.md`
-
-## Current focus
-
-See **Current** in `docs/PROGRESS.md`. As of Stage 2 start: **Lesson 14 — Sets**.
+- Shared: this file, [TUTOR.md](TUTOR.md), [ARCHITECTURE.md](ARCHITECTURE.md), [DECISIONS.md](DECISIONS.md), [ACTIVITY_LOG.md](ACTIVITY_LOG.md)
+- Python: [python/CURRICULUM.md](python/CURRICULUM.md)
+- JS: [js/CURRICULUM.md](js/CURRICULUM.md), [js/HOW_TO_LEARN.md](js/HOW_TO_LEARN.md)

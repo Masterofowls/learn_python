@@ -4,9 +4,17 @@ Running history of tutoring and repo changes.
 
 ## 2026-10-01
 
-- Lesson 20 (`*args` / `**kwargs`) reviewed complete after removing erroneous trailing `()` calls.
-- Lesson 19 (comprehensions) reviewed complete; added missing `print(squares)`.
-- Progress: Stage 2 L14–L20 done; current = L21 OOP (inheritance, `@property`, `__str__`).
+- JS Lesson 5 reviewed complete (`js/lesson5.js`, `for...of` fix); current = JS L6.
+- JS Lesson 4 reviewed complete (`js/lesson4.js`); current = JS L5.
+- JS Lesson 3 reviewed complete (`js/lesson3.js`); current = JS L4.
+- JS Lesson 2 reviewed complete (`js/lesson2.js`); current = JS L3.
+- JS Lesson 1 reviewed complete (`js/lesson1.js`); current = JS L2.
+- ADR-006: lesson quizzes/tests skipped temporarily (Theory → task → review). Updated `HOW_TO_LEARN.md` + `TUTOR.md`.
+- Started JS track at Lesson 1 (theory + task assigned).
+- Reorganized repo into dual tracks: moved all `lesson*.py` + `helpers.py` → `python/`; created `js/` for JavaScript lessons.
+- Split curricula: `docs/python/*`, `docs/js/*`; shared process docs updated (`HOW_TO_LEARN`, `TUTOR`, `ARCHITECTURE`, `DECISIONS`).
+- Python progress unchanged: Stage 2 current = L21. JS progress: Stage 1 current = L1.
+- Lesson 20 (`*args` / `**kwargs`) reviewed complete; Lesson 19 comprehensions complete earlier same day.
 
 ## 2026-09-26
 
@@ -18,4 +26,4 @@ Running history of tutoring and repo changes.
 
 - Stage 1 completed interactively: lessons 1–13 (`lesson1.py` … `lesson13.py`, plus `helpers.py`).
 - Topics covered: basics → control flow → collections intro → functions → files → errors → modules → classes → `time`/`requests` → `asyncio`.
-- Agreed to insert Stage 2 depth (sets, tuples/lists/dicts master, strings, comps, args/kwargs, OOP, venv, json, typing, pathlib, logging) before libraries and web frameworks.
+- Agreed to insert Stage 2 depth before libraries and web frameworks.

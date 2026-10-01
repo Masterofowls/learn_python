@@ -1,5 +1,7 @@
 # Lesson / local data
 /learner.txt
+/python/learner.txt
+/js/learner.txt
 /.cursor
 
 # Python
@@ -15,6 +17,13 @@ build/
 .venv/
 venv/
 env/
+python/.venv/
+
+# Node / JS
+node_modules/
+js/node_modules/
+npm-debug.log*
+yarn-error.log*
 
 # Env & secrets
 .env

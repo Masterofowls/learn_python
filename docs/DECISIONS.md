@@ -1,33 +1,44 @@
 # Decisions (ADR log)
 
-## ADR-001: Four-stage curriculum with hard locks
+## ADR-001: Four-stage curriculum with hard locks (Python)
 
 - **Date:** 2026-09-26
 - **Status:** Accepted
-- **Context:** Learner wants zero → advanced, including numpy/pandas/pytest and later FastAPI/Django, but Stage 1 skimmed sets, list/dict/tuple depth, strings, comprehensions, typing, etc.
-- **Decision:** Insert **Stage 2** (L14–L26) for language/tooling depth. **Stage 3** = NumPy → pandas → pytest. **Stage 4** = FastAPI → Django. No skipping stages.
-- **Consequences:** Libraries and web frameworks wait until Stage 2 is complete; stronger foundation for pandas and APIs.
+- **Decision:** Stage 2 depth (L14–L26) before NumPy → pandas → pytest; then FastAPI → Django.
+- **Consequences:** Libraries/web wait until language depth is done.
 
 ## ADR-002: Tutoring loop = Theory → Test → task file → review
 
 - **Date:** 2026-09-24
 - **Status:** Accepted
-- **Context:** Learner wants interactive teaching with checked homework, not only “run the script.”
-- **Decision:** Each lesson has theory, a short quiz, a `lessonN.py` task, then tutor review of answers and code.
-- **Consequences:** Progress is gated on understanding, not only output.
+- **Decision:** Each lesson has theory, quiz, task file, tutor review.
+- **Consequences:** Progress gated on understanding.
 
-## ADR-003: Flat lesson files until Stage 3
+## ADR-003: Language folders instead of repo-root lessons
+
+- **Date:** 2026-10-01
+- **Status:** Accepted (supersedes flat root lessons from ADR-003 old form)
+- **Context:** Learner wants the same interactive system for JavaScript alongside Python.
+- **Decision:** Move all Python lessons to `python/`; add `js/` with parallel curriculum/docs. Shared process docs stay under `docs/`; per-track maps under `docs/python/` and `docs/js/`.
+- **Consequences:** Clear separation; run paths change (`python python/lessonN.py`, `node js/lessonN.js`).
+
+## ADR-004: Stage 3 order is NumPy → pandas → pytest (Python)
 
 - **Date:** 2026-09-26
 - **Status:** Accepted
-- **Context:** Early lessons are tiny scripts; a full `apps/` monorepo would add noise.
-- **Decision:** Keep `lessonN.py` at repo root through Stage 2; introduce `apps/`, `tests/` when pytest and web work begin.
-- **Consequences:** Simple git status and reviews; structure grows when needed.
+- **Decision:** NumPy first, then pandas, then pytest.
 
-## ADR-004: Stage 3 order is NumPy → pandas → pytest
+## ADR-005: Parallel JS four-stage track
 
-- **Date:** 2026-09-26
+- **Date:** 2026-10-01
 - **Status:** Accepted
-- **Context:** Learner listed pandas/pytest/numpy; pandas conceptually builds on array thinking; pytest should test real code after data libs are introduced.
-- **Decision:** Teach NumPy first, then pandas, then pytest.
-- **Consequences:** Clear dependency order for Stage 3 lessons.
+- **Decision:** JS mirrors Python stages with Node/JS analogs (arrays/objects, fetch/async, Vitest, Express/Fastify → Next/Nest). Tracks progress independently.
+- **Consequences:** Tutor must scope to the active track’s `PROGRESS.md`.
+
+## ADR-006: Skip lesson quizzes temporarily
+
+- **Date:** 2026-10-01
+- **Status:** Accepted (temporary)
+- **Context:** Learner asked to skip tests/quizzes for now while starting the JS track.
+- **Decision:** Tutoring loop is Theory → task → code review. No quiz required until the learner turns quizzes back on.
+- **Consequences:** Faster lesson flow; less formal concept checks until re-enabled.

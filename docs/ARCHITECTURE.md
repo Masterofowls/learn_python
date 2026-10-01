@@ -1,42 +1,46 @@
 # Architecture
 
-This repo is a **personal Python learning workspace**, not a multi-app product monorepo.
+Personal **dual-track** learning workspace (Python + JavaScript), not a product monorepo.
 
 ## Layout
 
 ```
 learn_python/
-  lessonN.py          # one file per lesson task (N = lesson number)
-  helpers.py          # shared module when a lesson needs imports
+  python/                 # Python lessons (lessonN.py, helpers.py)
+  js/                     # JavaScript lessons (lessonN.js)
   docs/
-    CURRICULUM.md     # full stage/lesson map + locks
-    HOW_TO_LEARN.md   # tutoring workflow
-    PROGRESS.md       # checklist
-    ACTIVITY_LOG.md   # dated history
-    ARCHITECTURE.md   # this file
-    DECISIONS.md      # ADRs / choices
-  README.md           # setup + how to start
+    HOW_TO_LEARN.md       # shared tutoring loop
+    TUTOR.md
+    ACTIVITY_LOG.md
+    ARCHITECTURE.md       # this file
+    DECISIONS.md
+    python/
+      CURRICULUM.md
+      PROGRESS.md
+    js/
+      CURRICULUM.md
+      PROGRESS.md
+      HOW_TO_LEARN.md
+  README.md
 ```
 
 ## Design choices
 
+- **Two code roots** keep languages separate while sharing the same study method.
 - **Lesson-per-file** keeps feedback small and reviewable.
-- **Stages** prevent jumping to pandas/web before language depth.
-- **Docs as source of truth** for order; chat follows `CURRICULUM.md`.
+- **Per-track stage locks** prevent jumping to frameworks before depth.
+- **Docs per track** for curriculum/progress; shared docs for process.
 
 ## Runtime
 
-- Local CPython via pyenv (Windows). Target one version per project phase (see Lesson 22 / venv).
-- Third-party packages installed into that same environment (`python -m pip …`).
+- Python: CPython via pyenv; later `python/.venv` + `requirements.txt`.
+- JavaScript: Node.js LTS; later `js/package.json` + local `node_modules`.
 
-## Future (Stage 3–4)
-
-When libraries and web apps appear, prefer:
+## Future (each track Stage 3–4)
 
 ```
-apps/          # e.g. api experiments
-packages/      # shared helpers if needed
-tests/         # pytest
+python/apps/   or  js/apps/
+python/tests/  or  js/tests/
 ```
 
-Until then, flat `lessonN.py` at repo root is intentional.
+Until then, flat `lessonN` files inside `python/` and `js/` are intentional.
