@@ -22,8 +22,14 @@ python/.venv/
 # Node / JS
 node_modules/
 js/node_modules/
+qa/**/node_modules/
 npm-debug.log*
 yarn-error.log*
+
+# Playwright
+qa/**/test-results/
+qa/**/playwright-report/
+qa/**/blob-report/
 
 # Env & secrets
 .env

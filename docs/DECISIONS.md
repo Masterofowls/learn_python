@@ -42,3 +42,17 @@
 - **Context:** Learner asked to skip tests/quizzes for now while starting the JS track.
 - **Decision:** Tutoring loop is Theory → task → code review. No quiz required until the learner turns quizzes back on.
 - **Consequences:** Faster lesson flow; less formal concept checks until re-enabled.
+
+## ADR-007: Dedicated QA / testing track
+
+- **Date:** 2026-10-01
+- **Status:** Superseded by ADR-008
+- **Decision:** Originally foundations + curl/HTTPie → pytest → Jest → Playwright → advanced.
+
+## ADR-008: QA path = pytest → Jest+SuperTest → Playwright
+
+- **Date:** 2026-10-02
+- **Status:** Accepted
+- **Context:** Learner asked to skip HTTP-tool foundation stages and go directly to learning automation: Stage 1 pytest, Stage 2 Jest with SuperTest, Stage 3 Playwright.
+- **Decision:** Reorder QA curriculum. curl/HTTPie and early theory notes become optional appendix. Stage locks: pytest (L1–L9) → Jest+SuperTest (L10–L16) → Playwright (L17–L23) → optional advanced.
+- **Consequences:** Faster path to real test runners; SuperTest is required in Stage 2 alongside Jest.

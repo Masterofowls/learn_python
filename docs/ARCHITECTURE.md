@@ -1,46 +1,42 @@
 # Architecture
 
-Personal **dual-track** learning workspace (Python + JavaScript), not a product monorepo.
+Personal **multi-track** learning workspace (Python + JavaScript + QA), not a product monorepo.
 
 ## Layout
 
 ```
 learn_python/
-  python/                 # Python lessons (lessonN.py, helpers.py)
-  js/                     # JavaScript lessons (lessonN.js)
+  python/                 # Python lessons
+  js/                     # JavaScript lessons
+  qa/                     # Testing labs (curl, httpie, pytest, jest, playwright)
   docs/
-    HOW_TO_LEARN.md       # shared tutoring loop
+    HOW_TO_LEARN.md
     TUTOR.md
     ACTIVITY_LOG.md
-    ARCHITECTURE.md       # this file
+    ARCHITECTURE.md
     DECISIONS.md
     python/
-      CURRICULUM.md
-      PROGRESS.md
     js/
-      CURRICULUM.md
-      PROGRESS.md
-      HOW_TO_LEARN.md
+    qa/
   README.md
 ```
 
 ## Design choices
 
-- **Two code roots** keep languages separate while sharing the same study method.
-- **Lesson-per-file** keeps feedback small and reviewable.
-- **Per-track stage locks** prevent jumping to frameworks before depth.
-- **Docs per track** for curriculum/progress; shared docs for process.
+- **Separate code roots** per track; shared tutoring method.
+- **Lesson-sized artifacts** for reviewable feedback.
+- **Per-track stage locks** so tools/frameworks wait on foundations.
+- **QA is its own track** so testing can go deep without blocking language study.
 
 ## Runtime
 
-- Python: CPython via pyenv; later `python/.venv` + `requirements.txt`.
-- JavaScript: Node.js LTS; later `js/package.json` + local `node_modules`.
+- Python: CPython / pyenv; venv as needed for pytest (`qa/pytest`).
+- JavaScript: Node.js LTS; local installs for Jest, SuperTest, Playwright under `qa/jest` and `qa/playwright`.
 
-## Future (each track Stage 3–4)
+## Growth
 
 ```
-python/apps/   or  js/apps/
-python/tests/  or  js/tests/
+qa/pytest/       # Stage 1
+qa/jest/         # Stage 2 (+ SuperTest)
+qa/playwright/   # Stage 3
 ```
-
-Until then, flat `lessonN` files inside `python/` and `js/` are intentional.

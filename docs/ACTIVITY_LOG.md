@@ -2,8 +2,16 @@
 
 Running history of tutoring and repo changes.
 
+## 2026-10-02
+
+- QA pytest L2 complete (`qa/pytest/lesson2`, 3 passed, separate `math_utils`); current = pytest L3 (`pytest.raises`).
+- QA pytest L1 complete (`qa/pytest/lesson1`, 2 passed); current = pytest L2.
+- QA curriculum reordered (ADR-008): Stage 1 pytest → Stage 2 Jest+SuperTest → Stage 3 Playwright; curl/HTTPie demoted to optional appendix.
+- QA orientation L1 notes kept; current = pytest Lesson 1.
+
 ## 2026-10-01
 
+- Added QA/testing track (`qa/`, `docs/qa/*`): curl → HTTPie → pytest → Jest → Playwright → advanced; ADR-007.
 - JS Lesson 5 reviewed complete (`js/lesson5.js`, `for...of` fix); current = JS L6.
 - JS Lesson 4 reviewed complete (`js/lesson4.js`); current = JS L5.
 - JS Lesson 3 reviewed complete (`js/lesson3.js`); current = JS L4.

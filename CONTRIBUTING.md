@@ -10,7 +10,7 @@ Personal dual-track learning repo (Python + JavaScript).
 4. Append milestones to `docs/ACTIVITY_LOG.md`.
 5. Conventional commits if you commit: `feat:`, `fix:`, `docs:`, `chore:`.
 6. Never commit secrets, venv, `node_modules`, or `__pycache__`.
-7. Put new lessons in `python/` or `js/`, not the repo root.
+7. Put new lessons in `python/`, `js/`, or `qa/` — not the repo root.
 
 ## Review checklist
 
