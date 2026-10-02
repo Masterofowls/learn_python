@@ -4,6 +4,8 @@ Running history of tutoring and repo changes.
 
 ## 2026-10-02
 
+- QA pytest L4 complete (custom fixture + `tmp_path` file test, 2 passed); current = pytest L5 (parametrize).
+- QA pytest L3 complete (`pytest.raises` + `match=`, 2 passed); current = pytest L4 (fixtures).
 - QA pytest L2 complete (`qa/pytest/lesson2`, 3 passed, separate `math_utils`); current = pytest L3 (`pytest.raises`).
 - QA pytest L1 complete (`qa/pytest/lesson1`, 2 passed); current = pytest L2.
 - QA curriculum reordered (ADR-008): Stage 1 pytest → Stage 2 Jest+SuperTest → Stage 3 Playwright; curl/HTTPie demoted to optional appendix.
