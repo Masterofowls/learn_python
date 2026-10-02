@@ -2,7 +2,7 @@
 
 **Track:** QA (`qa/`)  
 **Path:** pytest → Jest + SuperTest → Playwright  
-**Current:** Stage 1 — Lesson 5 (Parametrize)  
+**Current:** Stage 1 — Lesson 6 (Markers / skip / xfail)  
 **Quizzes:** skipped (global temporary rule)
 
 ---
@@ -18,7 +18,7 @@
 - [x] L2 — Multiple tests / -v / AAA
 - [x] L3 — pytest.raises
 - [x] L4 — Fixtures
-- [ ] L5 — Parametrize
+- [x] L5 — Parametrize
 - [ ] L6 — Markers / skip / xfail
 - [ ] L7 — Mocking
 - [ ] L8 — API tests with requests
