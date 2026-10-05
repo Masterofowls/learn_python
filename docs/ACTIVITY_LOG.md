@@ -4,6 +4,7 @@ Running history of tutoring and repo changes.
 
 ## 2026-10-02
 
+- QA pytest L6 complete (skip/xfail/slow + `-m slow`, 2 passed / 1 skipped / 1 xfailed); current = pytest L7 (mocking).
 - QA pytest L5 complete (parametrize 4 rows + raises, 5 passed); current = pytest L6 (markers).
 - QA pytest L4 complete (custom fixture + `tmp_path` file test, 2 passed); current = pytest L5 (parametrize).
 - QA pytest L3 complete (`pytest.raises` + `match=`, 2 passed); current = pytest L4 (fixtures).
