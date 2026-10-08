@@ -2,8 +2,15 @@
 
 Running history of tutoring and repo changes.
 
+## 2026-10-09
+
+- QA Stage 1 (pytest L1–L9) complete; unlocked Stage 2 Jest + SuperTest at L10.
+- QA pytest L9 complete (`pytest.ini` + 100% cov on `math_utils`, 3 passed).
+
 ## 2026-10-02
 
+- QA pytest L8 complete (httpbin GET/POST with timeout, 2 passed); current = pytest L9 (config/coverage).
+- QA pytest L7 complete (`monkeypatch.setenv` + default banner, 2 passed); current = pytest L8 (API + requests).
 - QA pytest L6 complete (skip/xfail/slow + `-m slow`, 2 passed / 1 skipped / 1 xfailed); current = pytest L7 (mocking).
 - QA pytest L5 complete (parametrize 4 rows + raises, 5 passed); current = pytest L6 (markers).
 - QA pytest L4 complete (custom fixture + `tmp_path` file test, 2 passed); current = pytest L5 (parametrize).

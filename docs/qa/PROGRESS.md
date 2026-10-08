@@ -2,7 +2,8 @@
 
 **Track:** QA (`qa/`)  
 **Path:** pytest → Jest + SuperTest → Playwright  
-**Current:** Stage 1 — Lesson 7 (Mocking / monkeypatch)  
+**Current:** Stage 2 — Lesson 10 (First Jest)  
+**Stage 1 (pytest):** complete  
 **Quizzes:** skipped (global temporary rule)
 
 ---
@@ -20,11 +21,11 @@
 - [x] L4 — Fixtures
 - [x] L5 — Parametrize
 - [x] L6 — Markers / skip / xfail
-- [ ] L7 — Mocking
-- [ ] L8 — API tests with requests
-- [ ] L9 — Config / coverage mindset
+- [x] L7 — Mocking
+- [x] L8 — API tests with requests
+- [x] L9 — Config / coverage mindset
 
-## Stage 2 — Jest + SuperTest (locked)
+## Stage 2 — Jest + SuperTest
 
 - [ ] L10 — First Jest
 - [ ] L11 — Matchers / describe
