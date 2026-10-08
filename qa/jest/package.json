@@ -1,0 +1,21 @@
+{
+  "name": "qa-jest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared Jest workspace for QA Stage 2 lessons (one node_modules, ESM)",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
+    "test:lesson10": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson10",
+    "test:lesson11": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson11",
+    "test:lesson12": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson12",
+    "test:lesson13": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson13",
+    "test:lesson14": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson14",
+    "test:lesson15": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson15",
+    "test:lesson16": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js lesson16"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}

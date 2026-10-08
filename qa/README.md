@@ -10,8 +10,8 @@
 
 ```
 qa/
-  pytest/      # Stage 1
-  jest/        # Stage 2 (+ SuperTest)
-  playwright/  # Stage 3
-  lesson1.md   # optional orientation (done)
+  pytest/lessonN/   # Stage 1 (per-lesson)
+  jest/             # Stage 2: shared npm + lesson10/, lesson11/, ...
+  playwright/       # Stage 3
+  lesson1.md        # optional orientation (done)
 ```

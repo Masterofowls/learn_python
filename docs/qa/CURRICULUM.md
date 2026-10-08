@@ -14,10 +14,12 @@ Do **not** skip stages within this track.
 
 | Stage | Name | Focus | Status |
 |-------|------|--------|--------|
-| 1 | pytest | Python unit → API-style tests | **Current** |
-| 2 | Jest + SuperTest | JS unit + HTTP API tests | Locked until Stage 1 |
+| 1 | pytest | Python unit → API-style tests | Complete |
+| 2 | Jest + SuperTest | JS unit + HTTP API tests | **Current** |
 | 3 | Playwright | Browser E2E | Locked until Stage 2 |
 | 4 | Advanced (optional) | CI, strategy, flaky tests | Locked until Stage 3 |
+
+**Jest install:** shared at `qa/jest/` (one `package.json` / `node_modules`). Lessons are subfolders only — no per-lesson npm install.
 
 ---
 
@@ -41,7 +43,7 @@ Do **not** skip stages within this track.
 
 | Lesson | Topic | Artifact |
 |--------|--------|----------|
-| 10 | Install Jest; first `*.test.js`; `expect` | `qa/jest/lesson10/` |
+| 10 | First `*.test.js`; `expect` (Jest already at `qa/jest/`) | `qa/jest/lesson10/` |
 | 11 | `describe` / matchers; AAA | `qa/jest/lesson11/` |
 | 12 | Async tests; `jest.fn` mocks | `qa/jest/lesson12/` |
 | 13 | Hooks (`beforeEach`); testing modules | `qa/jest/lesson13/` |

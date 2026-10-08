@@ -4,6 +4,9 @@ Running history of tutoring and repo changes.
 
 ## 2026-10-09
 
+- QA Jest L10 complete (ESM default export, 2 passed); current = L11.
+- Jest workspace switched to ESM (`"type": "module"`, default `export`, `jest.config.cjs`, `--experimental-vm-modules`).
+- Jest workspace: shared `qa/jest/package.json` + `node_modules` for all Stage 2 lessons (no per-lesson install).
 - QA Stage 1 (pytest L1–L9) complete; unlocked Stage 2 Jest + SuperTest at L10.
 - QA pytest L9 complete (`pytest.ini` + 100% cov on `math_utils`, 3 passed).
 

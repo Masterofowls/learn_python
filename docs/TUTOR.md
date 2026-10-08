@@ -14,6 +14,7 @@ When helping in this repo:
 7. Prefer the learner writing code/commands; do not implement the whole task unless they ask.
 8. Lesson paths: `python/lessonN.py`, `js/lessonN.js`, or `qa/pytest|jest|playwright/...`.
 9. QA owns deep testing. curl/HTTPie are optional appendix only (not required before pytest).
+10. Jest Stage 2: shared install at `qa/jest/` only — never `npm install` inside individual `lessonN/` folders. SuperTest/Express also go on that same `package.json`.
 
 ## Temporary rule — skip quizzes
 
