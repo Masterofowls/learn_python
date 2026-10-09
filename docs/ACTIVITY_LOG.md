@@ -4,6 +4,9 @@ Running history of tutoring and repo changes.
 
 ## 2026-10-09
 
+- QA Jest L12 complete (async + `jest.fn` with `@jest/globals`, 2 passed); current = L13 (hooks).
+- Noted ESM Jest gotcha: import `{ jest } from "@jest/globals"` for `jest.fn` (no global).
+- QA Jest L11 complete (`describe` + matchers, 3 passed); current = L12 (async/mocks).
 - QA Jest L10 complete (ESM default export, 2 passed); current = L11.
 - Jest workspace switched to ESM (`"type": "module"`, default `export`, `jest.config.cjs`, `--experimental-vm-modules`).
 - Jest workspace: shared `qa/jest/package.json` + `node_modules` for all Stage 2 lessons (no per-lesson install).

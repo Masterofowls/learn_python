@@ -8,7 +8,7 @@ Personal interactive courses for **Python**, **JavaScript**, and **QA / testing*
 |-------|-------------|------------|----------|---------|
 | Python | [`python/`](python/) | [docs/python/CURRICULUM.md](docs/python/CURRICULUM.md) | [docs/python/PROGRESS.md](docs/python/PROGRESS.md) | Stage 2 — L21 |
 | JavaScript | [`js/`](js/) | [docs/js/CURRICULUM.md](docs/js/CURRICULUM.md) | [docs/js/PROGRESS.md](docs/js/PROGRESS.md) | Stage 1 — L6 |
-| QA / Testing | [`qa/`](qa/) | [docs/qa/CURRICULUM.md](docs/qa/CURRICULUM.md) | [docs/qa/PROGRESS.md](docs/qa/PROGRESS.md) | Stage 2 — Jest L10 |
+| QA / Testing | [`qa/`](qa/) | [docs/qa/CURRICULUM.md](docs/qa/CURRICULUM.md) | [docs/qa/PROGRESS.md](docs/qa/PROGRESS.md) | Stage 2 — Jest L13 |
 
 Tracks are **independent**. You can run them in parallel (QA Stage 1 needs almost no coding).
 

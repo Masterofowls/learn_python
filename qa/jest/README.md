@@ -37,6 +37,18 @@ import double from "./math.js";
 
 Named exports also work: `export function double` → `import { double } from "./math.js"`.
 
+### `jest.fn` / mocks under ESM
+
+`jest` is **not** a free global with `--experimental-vm-modules`. Import it:
+
+```js
+import { jest } from "@jest/globals";
+
+const mockFn = jest.fn();
+```
+
+Same for `expect` if you ever see `expect is not defined` (usually `expect` still works; `jest` is the common missing one).
+
 ## Run tests
 
 ```bash

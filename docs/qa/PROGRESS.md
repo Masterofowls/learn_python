@@ -2,7 +2,7 @@
 
 **Track:** QA (`qa/`)  
 **Path:** pytest → Jest + SuperTest → Playwright  
-**Current:** Stage 2 — Lesson 11 (`describe` / matchers)  
+**Current:** Stage 2 — Lesson 13 (Hooks / modules)  
 **Stage 1 (pytest):** complete  
 **Quizzes:** skipped (global temporary rule)
 
@@ -28,8 +28,8 @@
 ## Stage 2 — Jest + SuperTest
 
 - [x] L10 — First Jest
-- [ ] L11 — Matchers / describe
-- [ ] L12 — Async + mocks
+- [x] L11 — Matchers / describe
+- [x] L12 — Async + mocks
 - [ ] L13 — Hooks / modules
 - [ ] L14 — SuperTest first HTTP test
 - [ ] L15 — SuperTest POST/JSON
